@@ -32,7 +32,7 @@ window.DATA = {
     { icon: "💰", name: "Доход / мес",      cur: 110,  target: 300,   suffix: "k", color: "#FF9F0A" },
     { icon: "📱", name: "@barilko.dimas",   cur: 1862, target: 10000, suffix: "",  color: "#FF4D7D" },
     { icon: "✈️", name: "TG OnlyWork",      cur: 250,  target: 1000,  suffix: "",  color: "#0A84FF" },
-    { icon: "💳", name: "PayHub подписки",  cur: 0,    target: 50,    suffix: "",  color: "#00C281" },
+    { icon: "💳", name: "PayHub подписки",  cur: 4,    target: 50,    suffix: "",  color: "#00C281" },
     { icon: "📖", name: "Книг за год",       cur: 2,    target: 24,    suffix: "",  color: "#6C5CE7" }
   ],
 
