@@ -215,8 +215,8 @@ body{
 
 </div>
 
-<script src="data.js"></script>
 <script>
+function boot(){
 const D = window.DATA;
 const fmt = n => n.toLocaleString('ru-RU');
 const DAYS=['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'];
@@ -288,6 +288,12 @@ document.getElementById('habits').innerHTML=D.habits.map(h=>`
 
 // north star
 document.getElementById('ns').textContent=D.northStar;
+}
+// грузим data.js в обход кэша — всегда свежие данные при открытии
+var _s=document.createElement('script');
+_s.src='data.js?t='+Date.now();
+_s.onload=boot;
+document.head.appendChild(_s);
 </script>
 </body>
 </html>
